@@ -4,7 +4,7 @@ MAINTAINER Jon Jenkins <jj@java2go.com> version: 0.1
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get update && \
     DEBIAN_FRONTEND=noninteractive apt-get upgrade -y && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y apache2 wget curl locales && \
     DEBIAN_FRONTEND=noninteractive apt-get clean
 
 ENV APACHE_TZ Europe/London
